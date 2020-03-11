@@ -28,6 +28,7 @@
        <view class="video_info">
          <!-- 播放量 -->
          <text class="play_count">
+           <mp-icon icon="add"/>
            <text>{{item.playCount}}</text>
          </text>
          <!-- 评论量 -->

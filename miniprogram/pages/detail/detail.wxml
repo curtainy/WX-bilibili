@@ -43,7 +43,6 @@
  </block>
 </view>
 
-<!-- 导航栏 -->
 
 <!-- 评论信息 -->
 <view class="comment_data" wx:else>

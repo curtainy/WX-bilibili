@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "my-title": "/component/my-title/my-title",
-    "mp-icon": "/weui-miniprogram/icon/icon"
-  }
+    "mp-icon": "/component/icon/icon"
+  },
+  "navigationBarTitleText": "bilibili"
 }

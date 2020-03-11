@@ -1,0 +1,49 @@
+/* component/my-title/my-title.wxss */
+
+.container{
+  display: flex;
+  padding: 10rpx;
+  align-items: center;
+}
+
+.logo{
+  flex:7; 
+}
+.logo image{
+  width: 140rpx;
+  height: 60rpx;
+}
+
+.search{
+ display: flex;
+ flex: 1;
+ justify-content: center;
+ align-items: center;
+}
+.search image{
+   width: 60rpx;
+  height: 60rpx;
+}
+.user{
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.user image{
+  width: 54rpx;
+  height: 60rpx;
+}
+
+.download{
+  display: flex;
+  flex: 3;
+  font-size: 30rpx;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10rpx;
+}

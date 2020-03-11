@@ -1,0 +1,55 @@
+<my-title/>
+<!-- 视频信息 -->
+<view class="video_info">
+  <!-- 视频标签 -->
+  <video src="{{videoInfo.videoSrc}}"></video>
+  <!-- 视频标题 -->
+  <view class="video_title">{{videoInfo.videoTitle}}</view>
+  <!-- 其他信息 -->
+  <view class="video_other">
+    <text class="author">{{videoInfo.author}}</text>
+    <text class="playCount">{{videoInfo.playCount}}次观看</text>
+    <text class="commentCount">{{videoInfo.commentCount}}弹幕</text>
+    <text>{{videoInfo.date}}</text>
+  </view>
+</view>
+
+
+
+<!-- 推荐视频信息 -->
+<view class="recommen">
+ <block wx:for="{{othersVideoList}}" wx:key="index">
+  <view class="ov_item">
+    <view class="item_left">
+     <image src="{{item.imgSrc}}"/>
+    </view>
+    <view class="item_right">
+      <view class="ir_top">{{item.title}}</view>
+      <view class="ir_bottom">
+       <text>{{item.playMsg}}万次观看</text>
+       <text>{{item.commentCount}}弹幕</text>
+     </view>
+    </view>
+  </view>
+ </block>
+</view>
+
+<!-- 导航栏 -->
+
+<!-- 评论信息 -->
+<view class="comment_data">
+ <!-- 评论总数 -->
+ <view class="comment_num">评论（{{commentNum}}）</view>
+ <!-- 评论详情 -->
+ <block wx:for="{{commentList}}" wx:key="index">
+   <view class="comment_data">
+     <view class="top">
+       <image src="{{item.userIconSrc}}"/>
+       <text class="comment_name">{{item.username}}</text>
+       <text class="comment_date">{{item.commentDate}}</text>
+     </view>
+     <view class="bottom">{{item.commentInfo}}</view>
+   </view>   
+ </block>
+</view>
+

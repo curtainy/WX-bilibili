@@ -1,0 +1,16 @@
+<!--component/my-title/my-title.wxml-->
+
+<view class="container">
+  <view class="logo">
+    <image src="/icon/logo2.png"/>
+  </view>
+  <view class="search">
+    <image src="/icon/search.png"/>
+  </view>
+  <view class="user">
+    <image src="/icon/user.png"/>
+  </view>
+  <view class="download">
+     下载App
+  </view>
+</view>

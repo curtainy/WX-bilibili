@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "my-title": "/component/my-title/my-title",
+    "mp-icon": "/weui-miniprogram/icon/icon"
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "详情页",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

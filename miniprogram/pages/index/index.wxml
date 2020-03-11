@@ -1,0 +1,44 @@
+<!-- 公共头部 -->
+<my-title/>
+<!-- 首页导航 -->
+<scroll-view class="scroll" scroll-x>
+  <view wx:for="{{navList}}" wx:key="index" 
+        class="scroll_item {{currentIndex === index ? 'active':''}}"
+        bind:tap="itemClick" data-index="{{index}}">
+        {{item.text}}
+  </view>
+</scroll-view>
+<!-- 轮播图 -->
+<swiper class="swiper" autoplay indicator-dots>
+    <swiper-item class="swiper_item" wx:for="{{swiperList}}" wx:key="index">
+      <navigator class="swiper_img">
+        <image src="{{item.imgSrc}}"/>
+      </navigator>
+    </swiper-item>
+</swiper>
+<!-- 视频 -->
+<view class="video">
+  <block wx:for="{{videoList}}" wx:key="index">
+    <navigator class="video_nav" url="/pages/detail/detail?id={{item.id}}">
+      <!-- 图片容器 -->
+      <view class="video_img">
+       <!-- 图片 -->
+       <image src="{{item.imgSrc}}"/>
+       <!-- 播放量 -->
+       <view class="video_info">
+         <!-- 播放量 -->
+         <text class="play_count">
+           <text>{{item.playCount}}</text>
+         </text>
+         <!-- 评论量 -->
+         <text class="comment_count">
+           <text>{{item.commentCount}}</text>
+         </text>
+       </view>
+      </view>
+      <!-- 描述信息 -->
+      <view class="video_desc">{{item.desc}}</view>
+    </navigator>
+  </block>
+</view>
+

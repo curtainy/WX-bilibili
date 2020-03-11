@@ -1,0 +1,68 @@
+.scroll{
+  height: 80rpx;
+  white-space: nowrap;
+}
+.scroll_item{
+  width: 100rpx;
+  height: 50rpx;
+  display: inline-block;
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.active{
+  border-bottom: 4px solid pink;
+}
+
+.swiper{
+  height: 220rpx;
+}
+.swiper_item navigator{
+  height: 100%;
+}
+.swiper_item image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.video{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.video_nav{
+  width: 48%;
+  margin-top: 20rpx;
+}
+.video_img{
+  position: relative;
+  height: 300rpx;
+}
+.video_img image{
+  width: 100%;
+  height: 100%;
+  border-radius: 16rpx;
+}
+
+.video_info{
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  bottom: 10rpx;
+  width: 100%;
+  color: #fff;
+  font-size: 30rpx;
+}
+.video_desc{
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-size: 25rpx;
+}
+
+
+

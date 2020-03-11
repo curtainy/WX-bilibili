@@ -8,7 +8,8 @@ Page({
     videoInfo: {},
     othersVideoList: [],
     commentNum: 0,
-    commentList: []
+    commentList: [],
+    isShow: true
   },
 
   /**
@@ -65,6 +66,22 @@ Page({
           commentList: res.data.data.commentData.commentList
         })
       }
+    })
+  },
+  /**
+   * 点击推荐栏
+   */
+  recommendClick(){
+    this.setData({
+      isShow: true
+    })
+  },
+  /**
+   * 点击评论栏
+   */
+  commentClick(){
+    this.setData({
+      isShow: false
     })
   }
 })

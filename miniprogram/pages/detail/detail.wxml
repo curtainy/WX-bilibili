@@ -15,9 +15,18 @@
 </view>
 
 
+<!-- 导航栏 -->
+<view class="tabbar">
+  <view class="tabbar_item" bind:tap="recommendClick">
+   <text class="{{isShow?'active':''}}">推荐</text>
+  </view>
+  <view class="tabbar_item" bind:tap="commentClick">
+   <text class="{{!isShow?'active':''}}">评论</text>
+  </view>
+</view>
 
 <!-- 推荐视频信息 -->
-<view class="recommen">
+<view class="recommen" wx:if="{{isShow}}">
  <block wx:for="{{othersVideoList}}" wx:key="index">
   <view class="ov_item">
     <view class="item_left">
@@ -37,7 +46,7 @@
 <!-- 导航栏 -->
 
 <!-- 评论信息 -->
-<view class="comment_data">
+<view class="comment_data" wx:else>
  <!-- 评论总数 -->
  <view class="comment_num">评论（{{commentNum}}）</view>
  <!-- 评论详情 -->

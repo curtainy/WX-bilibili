@@ -24,8 +24,29 @@
 }
 
 
+.tabbar{
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+.tabbar_item{
+  flex: 1;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+.tabbar_item text{
+  padding: 5rpx;
+}
+.active{
+  color: red;
+  border-bottom: 2rpx solid red;
+}
+
 .recommen{
-  border-top: 3rpx solid gray;
   margin-top: 10rpx;
 }
 .ov_item{
@@ -48,7 +69,6 @@
 }
 .ir_top{
   font-size: 32rpx;
-  color: red;
   margin-bottom: 20rpx;
 }
 .ir_bottom{
@@ -58,7 +78,7 @@
 
 .comment_data{
   padding: 10rpx 15rpx 5rpx 15rpx;
-  border-bottom: 2rpx solid gray;
+  border-bottom: 2rpx solid gainsboro;
 }
 .comment_num{
   font-size: 30rpx;
